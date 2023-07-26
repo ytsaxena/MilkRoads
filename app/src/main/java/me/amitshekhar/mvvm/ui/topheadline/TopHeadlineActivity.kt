@@ -67,8 +67,7 @@ class TopHeadlineActivity : AppCompatActivity() {
                         is UiState.Error -> {
                             //Handle Error
                             binding.progressBar.visibility = View.GONE
-                            Toast.makeText(this@TopHeadlineActivity, it.message, Toast.LENGTH_LONG)
-                                .show()
+                            Toast.makeText(this@TopHeadlineActivity, it.message, Toast.LENGTH_LONG).show()
                         }
                     }
                 }

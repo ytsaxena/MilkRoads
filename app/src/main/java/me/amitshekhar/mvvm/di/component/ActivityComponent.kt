@@ -3,6 +3,7 @@ package me.amitshekhar.mvvm.di.component
 import dagger.Component
 import me.amitshekhar.mvvm.di.ActivityScope
 import me.amitshekhar.mvvm.di.module.ActivityModule
+import me.amitshekhar.mvvm.ui.onBoardingScreens.SplashScreenActivity
 import me.amitshekhar.mvvm.ui.topheadline.TopHeadlineActivity
 
 @ActivityScope
@@ -10,5 +11,7 @@ import me.amitshekhar.mvvm.ui.topheadline.TopHeadlineActivity
 interface ActivityComponent {
 
     fun inject(activity: TopHeadlineActivity)
+
+    fun inject(activity: SplashScreenActivity)
 
 }
